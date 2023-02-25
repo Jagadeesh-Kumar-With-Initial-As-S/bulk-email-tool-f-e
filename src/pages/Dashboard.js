@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { decodeToken } from "react-jwt";
 import './App.css';
-import React, {useState} from "react";
+// import React, {useState} from "react";
 import {GoogleLogin, GoogleLogout} from "react-google-login"
 import EmailForm from "./components/EmailForm";
 
