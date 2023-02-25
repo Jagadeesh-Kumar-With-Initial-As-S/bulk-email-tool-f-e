@@ -1,3 +1,42 @@
+<hr/>
+
+# Task
+
+Task - Bulk Email Tool Frontend
+
+<hr/>
+
+# Brief
+
+Kindly add create oAuth credentials and update the relevant parameters to test
+
+<hr/>
+
+# Advertisement
+
+Submitted and coded by Jagadeesh Kumar . S, you may send mail to my email address which is jagadeesh_2k17@proton.me, you may contribute some money to my Indian Unified Payment Interface (UPI) which is jagadeesh-kumar@ybl .
+
+<hr/>
+
+# Front-end
+
+Front-end which is used is equal to ReactJS
+
+<hr/>
+
+# Back-end Source code
+
+Back-end Source code's link is equal to https://github.com/Jagadeesh-Kumar-Initial-Is-S/bulk-email-tool-f-e .
+
+<hr/>
+
+# Back-end Deployed URL
+
+Back-end Deployed URL's link is equal to # .
+
+<hr/>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
