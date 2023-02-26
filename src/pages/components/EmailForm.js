@@ -44,6 +44,9 @@ const submitbtn = async () => {
     
     <div>
         <form>
+        <br />
+        <br />
+        <br />
             <label htmlFor="email">Email To:</label>
             <br />
             <input type="email" id="email" required />
@@ -54,7 +57,7 @@ const submitbtn = async () => {
             <br />
             <label htmlfor="message">Message:</label>
             <br />
-            <textarea id="message" required></textarea>
+            <textarea id="message" rows="7" required></textarea>
             <br />
             <input type="submit" onClick={submitbtn} className="submit" value={"Send"}/>
         </form>
