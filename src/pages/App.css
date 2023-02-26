@@ -24,7 +24,7 @@ attention1, attention2 {
 
 form {
 top: 50px;
-width: 100%;
+width: 50%;
 padding-top: 50px;
 }
 
@@ -36,7 +36,8 @@ font-size: 15px !important;
 width: 50%;
 border: none;
 margin-top: 0;
-background-color: transparent;
+/* background-color: transparent; */
+background-color: grey;
 }
 
 input:focus {
