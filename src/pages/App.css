@@ -85,17 +85,9 @@ form a:focus {
   outline-offset: 2px;
 }
 
-form > div {
-  order: 2;
-}
-
 label {
   display: flex;
   flex-direction: column;
-}
-
-.label-show-password {
-  order: 3;
 }
 
 label > span {
@@ -111,11 +103,6 @@ label > span.required::after {
   content: "*";
   color: #dd6666;
   margin-left: 0.125rem;
-}
-
-label input {
-  order: 2;
-  outline: none;
 }
 
 label input::placeholder {
@@ -159,7 +146,6 @@ input {
   height: 2.25rem;
   line-height: 1.25rem;
   margin-top: 0.25rem;
-  order: 2;
   padding: 0.25rem 0.5rem;
   width: 15rem;
   transition: all 0.25s;
@@ -171,7 +157,6 @@ input[type="submit"] {
   font-size: 0.75rem;
   font-weight: bold;
   margin-top: 0.625rem;
-  order: 4;
   outline: 1px dashed transparent;
   outline-offset: 2px;
   padding-left: 0;
@@ -252,7 +237,6 @@ figure {
   height: 0;
   margin: auto auto;
   margin-bottom: 2rem;
-  order: 1;
   padding-top: 60%;
   position: relative;
   width: 60%;
