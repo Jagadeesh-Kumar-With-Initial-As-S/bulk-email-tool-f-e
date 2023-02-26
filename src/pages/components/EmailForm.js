@@ -64,7 +64,7 @@ const submitbtn = async () => {
             <br />
             <br />
             <label for="subject">Subject:</label>
-            <input type="text" placeholder="You may enter subject on here." style={{width: "550px"}} id="subject" required />
+            <input type="text" placeholder="You may enter subject on here." style={{width: "850px"}} id="subject" required />
             <br />
             <br />
             <label htmlfor="message">Message:</label>
