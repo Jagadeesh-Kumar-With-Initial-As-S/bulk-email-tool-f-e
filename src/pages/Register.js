@@ -29,33 +29,35 @@ const Register = () => {
     }
   };
   return (
-    <div>
+    <><div>
       <h1>Register</h1>
       <form onSubmit={handleRegister}>
         <input
           placeholder="Name"
           type="text"
           value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
+          onChange={(e) => setName(e.target.value)} />
         <br />
         <input
           placeholder="Email"
           type="email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+          onChange={(e) => setEmail(e.target.value)} />
         <br />
         <input
           placeholder="Password"
           type="password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          onChange={(e) => setPassword(e.target.value)} />
         <br />
         <input type="submit" />
       </form>
     </div>
+    <div>
+        If you have registered already then <a href="https://bulk-email-tool-f-e.vercel.app/login">click here.
+          or copy and paste the following on browser to navigate to login <br/>
+          https://bulk-email-tool-f-e.vercel.app/login</a>
+    </div></>
   );
 };
 
