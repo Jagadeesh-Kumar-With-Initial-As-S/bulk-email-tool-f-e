@@ -23,14 +23,6 @@ attention1, attention2 {
 }
 
 form {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-orient: horizontal;
--webkit-box-direction: normal;
-    -ms-flex-direction: row;
-        flex-direction: row;
-/* position: absolute; */
 top: 50px;
 width: 100%;
 padding-top: 50px;
