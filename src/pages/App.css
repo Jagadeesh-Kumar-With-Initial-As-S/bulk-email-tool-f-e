@@ -140,6 +140,7 @@ input.text:active + span {
 }
 
 input {
+  position: center;
   border: 1px solid var(--border);
   border-radius: var(--borderRadius);
   box-sizing: border-box;
@@ -153,6 +154,7 @@ input {
 }
 
 input[type="submit"] {
+  position: center;
   color: hsl(var(--bgColorH), var(--bgColorS), var(--bgColorL));
   background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
   font-size: 0.75rem;
