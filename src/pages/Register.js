@@ -54,9 +54,9 @@ const Register = () => {
       </form>
     </div>
     <div>
-        If you have registered already then <a href="https://bulk-email-tool-f-e.vercel.app/login">click here.
+        If you have registered already then <a href="https://bulk-email-tool-f-e.vercel.app/login">click here</a>.
           or copy and paste the following on browser to navigate to login <br/>
-          https://bulk-email-tool-f-e.vercel.app/login</a>
+          https://bulk-email-tool-f-e.vercel.app/login
     </div></>
   );
 };
