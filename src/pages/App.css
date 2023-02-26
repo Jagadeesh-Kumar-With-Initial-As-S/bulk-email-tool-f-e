@@ -141,3 +141,9 @@ label {
     width: 100px;
     height: 100px;
 }
+
+.advertisement{
+    text-align: center;
+    font-size: xx-small;
+    color: red;
+}
