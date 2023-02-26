@@ -59,6 +59,7 @@ const Dashboard = () => {
 
   return (
     <div>
+      <EmailForm/>
       <h1>Dashboard</h1>
       <h2>{goal || "No goal found"}</h2>
       <form onSubmit={addGoal}>
@@ -69,7 +70,7 @@ const Dashboard = () => {
           type="text" />
         <input type="submit" />
       </form>
-        <EmailForm/>
+        
     </div>
       
   );
