@@ -24,15 +24,15 @@ Front-end which is used is equal to ReactJS
 
 <hr/>
 
-# Back-end Source code
+# Front-end Source code
 
-Back-end Source code's link is equal to https://github.com/Jagadeesh-Kumar-Initial-Is-S/bulk-email-tool-f-e .
+Front-end Source code's link is equal to https://github.com/Jagadeesh-Kumar-Initial-Is-S/bulk-email-tool-f-e .
 
 <hr/>
 
-# Back-end Deployed URL
+# Front-end Deployed URL
 
-Back-end Deployed URL's link is equal to # .
+Back-end Deployed URL's link is equal to https://bulk-email-tool-f-e.vercel.app/ .
 
 <hr/>
 
