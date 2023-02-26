@@ -1,9 +1,6 @@
-// import { useEffect, useState } from "react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { decodeToken } from "react-jwt";
 import './App.css';
-// import React, {useState} from "react";
-import {GoogleLogin, GoogleLogout} from "react-google-login"
 import EmailForm from "./components/EmailForm";
 
 const client_id = process.env.REACT_APP_CLIENT_ID
@@ -99,16 +96,7 @@ const Dashboard = () => {
           type="text" />
         <input type="submit" />
       </form>
-      <div id={"user-panel"}>
-          {Object.keys(user).length === 0 &&
-            <GoogleLogin id={"login-btn"} clientId={client_id} buttonText={"Log in"} isSignedIn={true}
-              cookiePolicy={"single_host_origin"} onSuccess={onSuccess} theme={"dark"}
-              onFailure={onFailure} scope={"profile email https://mail.google.com/"} />}
-          {Object.keys(user).length > 0 &&
-            <GoogleLogout id={"logout-btn"} clientId={client_id} buttonText={`Logout ${user.name}`}
-              onLogoutSuccess={handleLogOut} theme={"dark"} />}
-        </div>
-        <EmailForm token={token} />
+        <EmailForm/>
     </div>
       
   );
