@@ -88,7 +88,7 @@ const Dashboard = () => {
   };
 
   return (
-    <><div>
+    <div>
       <h1>Dashboard</h1>
       <h2>{goal || "No goal found"}</h2>
       <form onSubmit={addGoal}>
@@ -99,9 +99,7 @@ const Dashboard = () => {
           type="text" />
         <input type="submit" />
       </form>
-    </div>
-      <div>
-        <div id={"user-panel"}>
+      <div id={"user-panel"}>
           {Object.keys(user).length === 0 &&
             <GoogleLogin id={"login-btn"} clientId={client_id} buttonText={"Log in"} isSignedIn={true}
               cookiePolicy={"single_host_origin"} onSuccess={onSuccess} theme={"dark"}
@@ -111,7 +109,8 @@ const Dashboard = () => {
               onLogoutSuccess={handleLogOut} theme={"dark"} />}
         </div>
         <EmailForm token={token} />
-      </div></>
+    </div>
+      
   );
 };
 
