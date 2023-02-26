@@ -8,13 +8,4 @@ body {
     font-size: xx-small;
     color: red;
 }
-
-form {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    margin: 1% 20% 15px 20%;
-    background-color: rgb(255, 110, 50);
-    border: black 3px groove;
-  }
   
