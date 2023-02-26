@@ -3,7 +3,6 @@ import { decodeToken } from "react-jwt";
 import './App.css';
 import EmailForm from "./components/EmailForm";
 
-const client_id = process.env.REACT_APP_CLIENT_ID
 
 
 const Dashboard = () => {
@@ -56,32 +55,6 @@ const Dashboard = () => {
     } else {
       alert("Invalid Token");
     }
-  };
-
-
-  const [user, setUser] = useState({})
-  const [token, setToken] = useState({})
-
-  const onSuccess = (res) => {
-      setUser(res.profileObj)
-      setToken(res.tokenObj)
-      let refreshTiming = (res.tokenObj.expires_in || 3300) * 1000
-      const refreshToken = async () => {
-          const newAuthRes = await res.reloadAuthResponse()
-          refreshTiming = (newAuthRes.expires_in || 3300) * 1000
-          setTimeout(refreshToken, refreshTiming)
-      }
-      setTimeout(refreshToken, refreshTiming)
-  };
-
-  const onFailure = (res) => {
-      console.error(res)
-  };
-
-  const handleLogOut = () => {
-      document.getElementById("email-form").reset();
-      setUser({})
-      setToken({})
   };
 
   return (
