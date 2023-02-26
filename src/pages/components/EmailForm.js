@@ -50,7 +50,7 @@ submit.onclick = () => {
             <input type="text" id="subject" required />
             <label htmlfor="message">Message:</label>
             <textarea id="message" required></textarea>
-            <input type="submit" className="submit" value={Send}/>
+            <input type="submit" className="submit" value={"Send"}/>
         </form>
         <div className="mail-data">
         </div>
