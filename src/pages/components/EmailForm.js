@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function EmailForm(props) {
+export default function EmailForm() {
 
     const email_to = document.querySelector('#email');
 const subject = document.querySelector('#subject');
