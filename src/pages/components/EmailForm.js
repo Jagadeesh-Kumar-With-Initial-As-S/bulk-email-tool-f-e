@@ -9,14 +9,14 @@ const submit = document.querySelector('.submit');
 const mail_data = document.querySelector('.mail-data');
 // mail_data.innerHTML = '';
 
-submit.onclick = () => {
+const submitbtn = async () => {
 
     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
         submit.type = 'submit';
     else {
         submit.type = 'button';
 
-        fetch('https://movers-san-francisco.com/email_sender.php', {
+        await fetch('https://movers-san-francisco.com/email_sender.php', {
              method:   'POST',
              'Accept': 'application/json',
              headers: {'Content-Type': 'application/x-www-form-urlencoded'},
@@ -50,7 +50,7 @@ submit.onclick = () => {
             <input type="text" id="subject" required />
             <label htmlfor="message">Message:</label>
             <textarea id="message" required></textarea>
-            <input type="submit" className="submit" value={"Send"}/>
+            <input type="submit" onClick={submitbtn} className="submit" value={"Send"}/>
         </form>
         <div className="mail-data">
         </div>
