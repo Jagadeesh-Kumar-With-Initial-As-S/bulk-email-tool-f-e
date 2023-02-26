@@ -1,7 +1,4 @@
 import React, {useState} from "react";
-import Axios from "axios";
-import Papa from "papaparse";
-import {Modal, Spinner} from "react-bootstrap";
 
 export default function EmailForm(props) {
 
