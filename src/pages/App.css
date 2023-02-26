@@ -22,12 +22,6 @@ attention1, attention2 {
   border: 2px 2px solid;
 }
 
-form {
-top: 50px;
-width: 50%;
-padding-top: 50px;
-}
-
 
 
 input {
@@ -36,8 +30,7 @@ font-size: 15px !important;
 width: 50%;
 border: none;
 margin-top: 0;
-/* background-color: transparent; */
-background-color: grey;
+background-color: transparent;
 }
 
 input:focus {
