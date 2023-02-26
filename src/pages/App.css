@@ -24,13 +24,6 @@ attention1, attention2 {
 
 
 
-*{
-  margin:0;
-  padding:0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /* Initial menu */
 .menu {
    background-color: #98e1eb;
@@ -98,35 +91,7 @@ text-transform: uppercase;
 margin-right: 5px;
 }
 
-body {
-position: relative;
-left: 0;
-margin: 0;
-overflow: hidden;
-/*display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-min-height: 700px;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
--webkit-box-align: start;
-    -ms-flex-align: start;
-        align-items: flex-start;*/
-}
 
-.jumbotron{
-background:#fff url('https://imgur.com/download/yqdtMRi') no-repeat center;
-background-size: cover;
-  min-height: 100vh;
-  width: 100%;
-  padding: 1rem 1rem !important;
--webkit-background-size: cover;
-   -moz-background-size: cover;
-     -o-background-size: cover;
-        background-size: cover;
-}
 
 form {
 display: -webkit-box;
@@ -146,54 +111,6 @@ fieldset {
 position: relative;
 }
 
-.fa-search{
-position: relative;
-top: 0px;
-font-size: 20px !important;
-}
-
-.url{
-margin: 20px 50px;
-padding-left: 50px;
--webkit-box-flex: 5;
-    -ms-flex-positive: 5;
-        flex-grow: 5;
-}
-
-.enter{
-margin: 20px 20px;
--webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
-}
-
-label {
-position: absolute;
-top: -5px;
-letter-spacing: 10px;
-font-size: 20px;
-color: RGBA(55, 73, 87, 0.8);
--webkit-transform-origin: left;
-    -ms-transform-origin: left;
-        transform-origin: left;
--webkit-transition: all 0.3s ease;
--o-transition: all 0.3s ease;
-transition: all 0.3s ease;
-}
-
-input:focus ~ label {
-color: RGBA(254, 253, 255, 1.00);
-}
-
-input:focus ~ label,
-input:valid ~ label {
-top: 0;
-letter-spacing: 5px;
--webkit-transform: translate(0, -30px) scale(0.7, 0.7);
-    -ms-transform: translate(0, -30px) scale(0.7, 0.7);
-        transform: translate(0, -30px) scale(0.7, 0.7);
-
-}
 
 input {
 font-family: system-ui, Helvetica, Arial, sans-serif;
