@@ -43,20 +43,30 @@ const submitbtn = async () => {
         
     
     <div>
+        <br />
+        <br />
+        <br />
+
+            <attention>
+            If there were more than one email address then  you may enter the email addresses with ',' inbetween the email addresses.
+            <br/>
+            The subject and message are same for all the email address that you may enter on the input field.
+            <br/>
+            </attention>
+
         <form>
-        <br />
-        <br />
-        <br />
+            <br />
+            <br />
             <label htmlFor="email">Email To:</label>
-            <input type="email" style={{width: "550px"}} id="email" required />
+            <input type="email" placeholder="You man enter email address on here" style={{width: "550px"}} id="email" required />
             <br />
             <br />
             <label for="subject">Subject:</label>
-            <input type="text" style={{width: "550px"}} id="subject" required />
+            <input type="text" placeholder="You may enter subject on here." style={{width: "550px"}} id="subject" required />
             <br />
             <br />
             <label htmlfor="message">Message:</label>
-            <textarea id="message" rows="7" required></textarea>
+            <textarea placeholder="You may enter the message on here" id="message" style={{width: "550px"}} rows="7" required></textarea>
             <br />
             <br />
             <input type="submit" onClick={submitbtn} className="submit" value={"Send"}/>

@@ -17,3 +17,7 @@ body {
   height: 100vh;
   position: center;
 }
+
+attention {
+  border: 3px 3px solid;
+}
