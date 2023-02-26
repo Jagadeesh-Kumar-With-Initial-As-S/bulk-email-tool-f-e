@@ -18,6 +18,6 @@ body {
   position: center;
 }
 
-attention {
-  border: 3px 3px solid;
+attention1, attention2 {
+  border: 2px 2px solid;
 }
