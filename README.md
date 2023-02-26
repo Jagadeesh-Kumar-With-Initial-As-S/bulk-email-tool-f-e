@@ -8,7 +8,7 @@ Task - Bulk Email Tool Frontend
 
 # Brief
 
-Kindly add create oAuth credentials and update the relevant parameters to test
+Kindly update the relevant parameters to test.
 
 <hr/>
 
