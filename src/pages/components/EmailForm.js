@@ -54,11 +54,11 @@ const sendEmail = data => {
       From: process.env.USERNAME,
       Subject: subject,
       Body: message,
-      Attachments: [
-        {
-          name: "File_Name_with_Extension",
-          path: "Full Path of the file"
-        }]
+    //   Attachments: [
+    //     {
+    //       name: "File_Name_with_Extension",
+    //       path: "Full Path of the file"
+    //     }]
     })
     .then(message=>{
         // alert(message);
