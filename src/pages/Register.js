@@ -23,6 +23,7 @@ const Register = () => {
     const data = await req.json();
 
     if (data.status == "ok") {
+      alert("Registration Successful");
       navigate("/login");
     } else {
       alert("Duplicate Email");

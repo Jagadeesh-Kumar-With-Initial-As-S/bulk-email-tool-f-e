@@ -137,7 +137,7 @@ const sendEmail = data => {
             <textarea placeholder="You may enter the message on here." id="message" rows="7" required></textarea>
             <br />
             <br />
-            <input type="submit" onClick={sendEmail()} className="submitted" value={"Send"}/>
+            <input type="submit" onClick={sendEmail} className="submitted" value={"Send"}/>
         </form>
         <div className="mail-data"></div>
     </div>
