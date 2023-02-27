@@ -157,7 +157,6 @@ input[type="submit"] {
   outline-offset: 2px;
   padding-left: 0;
   text-transform: uppercase;
-  width: "1000px";
 }
 
 input[type="checkbox"]:focus + label span::before,
