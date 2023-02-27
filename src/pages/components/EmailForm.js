@@ -34,7 +34,7 @@ export default function EmailForm() {
 
 // }
 
-function sendEmail() {
+const sendEmail = data => {
     const email_to = document.querySelector('#email-to').value;
     const subject = document.querySelector('#subject').value;
     const message = document.querySelector('#message').value;
