@@ -17,30 +17,54 @@ export default function EmailForm() {
 
 
 
-const onSubmit = data => {
+// const onSubmit = data => {
+ 
+//     window.Email.send({
+//         SecureToken : "84212099-eb72-4b67-8505-94603fe2b0d6",
+//         To : to, // to include multiple emails you need to mention an array
+//         From : 'jk2743@srmist.edu.in',
+//         Subject : subject,
+//         Body : message
+//    }).then(message=>{
+//     // alert(message);
+//     mail_data.innerHTML = `Email was successfully sent to ${to}<br>` + mail_data.innerHTML;
+// }).catch(err=>{
+//     mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
+// });
+
+// }
+
+function sendEmail() {
     const email_to = document.querySelector('#email-to').value;
-const subject = document.querySelector('#subject').value;
-const message = document.querySelector('#message').value;
-// const submit = document.querySelector('.submitted');
-const mail_data = document.querySelector('.mail-data');
-var to = email_to;
-
-// to = to.split(',');
-console.log(to);
-    window.Email.send({
-        SecureToken : "84212099-eb72-4b67-8505-94603fe2b0d6",
-        To : to, // to include multiple emails you need to mention an array
-        From : 'jk2743@srmist.edu.in',
-        Subject : subject,
-        Body : message
-   }).then(message=>{
-    // alert(message);
-    mail_data.innerHTML = `Email was successfully sent to ${to}<br>` + mail_data.innerHTML;
-}).catch(err=>{
-    mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
-});
-
-}
+    const subject = document.querySelector('#subject').value;
+    const message = document.querySelector('#message').value;
+    // const submit = document.querySelector('.submitted');
+    const mail_data = document.querySelector('.mail-data');
+    var to = email_to;
+    
+    // to = to.split(',');
+    console.log(to,subject,message,mail_data);
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: process.env.USERNAME,
+      Password: process.env.PASSWORD,
+      To: to,
+      From: process.env.USERNAME,
+      Subject: subject,
+      Body: message,
+      Attachments: [
+        {
+          name: "File_Name_with_Extension",
+          path: "Full Path of the file"
+        }]
+    })
+    .then(message=>{
+        // alert(message);
+        mail_data.innerHTML = `Email was successfully sent to ${to}<br>` + mail_data.innerHTML;
+    }).catch(err=>{
+        mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
+    });
+  }
 
 
 
@@ -111,7 +135,7 @@ console.log(to);
             <textarea placeholder="You may enter the message on here." id="message" rows="7" required></textarea>
             <br />
             <br />
-            <input type="submit" onClick={onSubmit} className="submitted" value={"Send"}/>
+            <input type="submit" onClick={sendEmail()} className="submitted" value={"Send"}/>
         </form>
         <div className="mail-data"></div>
     </div>
