@@ -2,10 +2,10 @@ import React from "react";
 
 export default function EmailForm() {
 
-    const email_to = document.querySelector('#email');
+    const email_to = document.querySelector('#email_to');
 const subject = document.querySelector('#subject');
 const message = document.querySelector('#message');
-const submit = document.querySelector('.submit');
+const submit = document.querySelector('.submitted');
 const mail_data = document.querySelector('.mail-data');
 // mail_data.innerHTML = '';
 
@@ -60,7 +60,7 @@ const submitbtn = async () => {
             <br />
             <br />
             <label htmlFor="email">Email To:</label>
-            <input type="email" placeholder="You man enter email address on here. For example : hufutogaloge@gotgel.org,jagadeesh_2k17@proton.me" style={{width: "1000px"}} id="email" required />
+            <input type="email" placeholder="You man enter email address on here. For example : hufutogaloge@gotgel.org,jagadeesh_2k17@proton.me" style={{width: "1000px"}} id="email_to" required />
             <br />
             <br />
             <label for="subject">Subject:</label>
@@ -71,7 +71,7 @@ const submitbtn = async () => {
             <textarea placeholder="You may enter the message on here." id="message" style={{width: "1000px"}} rows="7" required></textarea>
             <br />
             <br />
-            <input type="submit" onClick={submitbtn} className="submit" value={"Send"}/>
+            <input type="submit" onClick={submitbtn} className="submitted" value={"Send"}/>
         </form>
         <div className="mail-data"></div>
     </div>
