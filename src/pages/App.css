@@ -148,7 +148,6 @@ input {
 }
 
 input[type="submit"] {
-  text-align: center;
   color: hsl(var(--bgColorH), var(--bgColorS), var(--bgColorL));
   background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
   font-size: 0.75rem;
@@ -158,6 +157,7 @@ input[type="submit"] {
   outline-offset: 2px;
   padding-left: 0;
   text-transform: uppercase;
+  width: "1000px";
 }
 
 input[type="checkbox"]:focus + label span::before,
