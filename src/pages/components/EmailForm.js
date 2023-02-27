@@ -47,14 +47,14 @@ const submitbtn = async () => {
         <br />
         <br />
 
-            <attention1>
+            <p>
             If there were more than one email address then  you may enter the email addresses with ',' inbetween the email addresses.
             <br/>
-            </attention1>
-            <attention2>
+            </p>
+            <p>
             The subject and message are same for all the email address that you may enter on the input field.
             <br/>
-            </attention2>
+            </p>
 
         <form>
             <br />

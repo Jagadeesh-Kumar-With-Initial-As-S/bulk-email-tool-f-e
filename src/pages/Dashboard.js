@@ -59,8 +59,9 @@ const Dashboard = () => {
 
   return (
     <><div>
-
       <h1>Dashboard</h1>
+      <br/>
+      <p>Welcome to the dashboard of Bulk Email Tool.</p>
       <h2>{goal || "No goal found"}</h2>
       <form onSubmit={addGoal}>
         <input
@@ -70,9 +71,6 @@ const Dashboard = () => {
           type="text" />
         <input type="submit" />
       </form>
-
-
-
     </div><div>
         <EmailForm />
       </div></>

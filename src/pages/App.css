@@ -1,6 +1,4 @@
 body {
-    background: url("./images/background.jpg") no-repeat;
-    background-size: cover;
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
@@ -18,12 +16,16 @@ body {
   position: center;
 }
 
-attention1, attention2 {
+p {
   border: 2px solid;
 }
 
 
 html, body {
+  text-align: center;
+  align-items: stretch;
+  width: 100%;
+  height: 100vh;
   position: center;
   align-items: center;
   background: #f2f4f8;
@@ -38,7 +40,6 @@ html, body {
 }
 
 form {
-  position: center;
   --background: white;
   --border: rgba(0, 0, 0, 0.125);
   --borderDark: rgba(0, 0, 0, 0.25);
@@ -96,7 +97,6 @@ label > span {
   display: block;
   font-size: 0.825rem;
   margin-top: 0.625rem;
-  order: 1;
   transition: all 0.25s;
 }
 
@@ -140,7 +140,6 @@ input.text:active + span {
 }
 
 input {
-  position: center;
   border: 1px solid var(--border);
   border-radius: var(--borderRadius);
   box-sizing: border-box;

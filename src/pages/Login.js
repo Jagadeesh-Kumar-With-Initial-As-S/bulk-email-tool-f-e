@@ -31,6 +31,8 @@ const Login = () => {
   return (
     <div>
       <h1>Login</h1>
+      <br/>
+      <p>Welcome to the login page of Bulk Email Tool.</p>
       <form onSubmit={handleLogin}>
         <input
           placeholder="Email"
