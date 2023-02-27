@@ -9,7 +9,8 @@ const submit = document.querySelector('.submitted');
 const mail_data = document.querySelector('.mail-data');
 // mail_data.innerHTML = '';
 
-const submitbtn = async () => {
+const submitbtn = async (e) => {
+    e.preventDefault();
 
     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
         submit.type = 'submit';
