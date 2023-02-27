@@ -260,11 +260,3 @@ form:valid figure .head .mouth {
   width: 40%;
   height: 40%;
 }
-
-form, body {
-  text-align: center;
-  align-items: stretch;
-  width: 100%;
-  height: 100vh;
-  position: center;
-}

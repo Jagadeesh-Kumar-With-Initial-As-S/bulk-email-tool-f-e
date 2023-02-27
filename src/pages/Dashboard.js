@@ -68,6 +68,7 @@ const Dashboard = () => {
           placeholder="Add a Goal"
           value={tempGoal}
           onChange={(e) => setTempGoal(e.target.value)}
+          style={{width: "1000px"}}
           type="text" />
         <input type="submit" />
       </form>

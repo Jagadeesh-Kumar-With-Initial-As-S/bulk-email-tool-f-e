@@ -60,15 +60,15 @@ const submitbtn = async () => {
             <br />
             <br />
             <label htmlFor="email">Email To:</label>
-            <input type="email" placeholder="You man enter email address on here. For example : hufutogaloge@gotgel.org,jagadeesh_2k17@proton.me" style={{width: "850px"}} id="email" required />
+            <input type="email" placeholder="You man enter email address on here. For example : hufutogaloge@gotgel.org,jagadeesh_2k17@proton.me" style={{width: "1000px"}} id="email" required />
             <br />
             <br />
             <label for="subject">Subject:</label>
-            <input type="text" placeholder="You may enter subject on here." style={{width: "850px"}} id="subject" required />
+            <input type="text" placeholder="You may enter subject on here." style={{width: "1000px"}} id="subject" required />
             <br />
             <br />
             <label htmlfor="message">Message:</label>
-            <textarea placeholder="You may enter the message on here." id="message" style={{width: "850px"}} rows="7" required></textarea>
+            <textarea placeholder="You may enter the message on here." id="message" style={{width: "1000px"}} rows="7" required></textarea>
             <br />
             <br />
             <input type="submit" onClick={submitbtn} className="submit" value={"Send"}/>
