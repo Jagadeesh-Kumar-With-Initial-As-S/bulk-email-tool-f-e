@@ -7,7 +7,7 @@ const subject = document.querySelector('#subject');
 const message = document.querySelector('#message');
 const submit = document.querySelector('.submit');
 const mail_data = document.querySelector('.mail-data');
-// mail_data.innerHTML = '';
+mail_data.innerHTML = '';
 
 const submitbtn = async () => {
 
