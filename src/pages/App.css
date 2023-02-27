@@ -227,7 +227,7 @@ input[name="show-password"]:checked ~ figure .head .eyes::after {
   animation: none;
 }
 
-input {
+input[type="email"],input[type="password"], input[type="subject"], input[type="text"] {
   width: "1000px";
 }
 
