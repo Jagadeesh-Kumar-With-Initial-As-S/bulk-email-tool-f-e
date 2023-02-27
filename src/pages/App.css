@@ -148,7 +148,7 @@ input {
 }
 
 input[type="submit"] {
-  position: center;
+  text-align: center;
   color: hsl(var(--bgColorH), var(--bgColorS), var(--bgColorL));
   background: hsl(var(--fgColorH), var(--fgColorS), var(--fgColorL));
   font-size: 0.75rem;
