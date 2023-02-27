@@ -2,7 +2,7 @@ import React from "react";
 
 export default function EmailForm() {
 
-    const email_to = document.querySelector('#email_to');
+    const email_to = document.querySelector('#email-to');
 const subject = document.querySelector('#subject');
 const message = document.querySelector('#message');
 const submit = document.querySelector('.submitted');
@@ -60,7 +60,7 @@ const submitbtn = async () => {
             <br />
             <br />
             <label htmlFor="email">Email To:</label>
-            <input type="email" placeholder="You man enter email address on here. For example : hufutogaloge@gotgel.org,jagadeesh_2k17@proton.me" style={{width: "1000px"}} id="email_to" required />
+            <input type="email" placeholder="You man enter email address on here. For example : hufutogaloge@gotgel.org,jagadeesh_2k17@proton.me" style={{width: "1000px"}} id="email-to" required />
             <br />
             <br />
             <label for="subject">Subject:</label>
