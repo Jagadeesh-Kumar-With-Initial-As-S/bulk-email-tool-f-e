@@ -42,7 +42,7 @@ const Dashboard = () => {
     const req = await fetch("https://bulk-email-tool-b-k.vercel.app/api/dashboard", {
       method: "POST",
       headers: { "Content-Type": "application/json", "x-access-token": token },
-      body: await JSON.stringify({
+      body: JSON.stringify({
         tempGoal,
       }),
     });
@@ -72,9 +72,11 @@ const Dashboard = () => {
           type="text" />
         <input type="submit" />
       </form>
-    </div><div>
+    </div>
+    <div>
         <EmailForm />
-      </div></>
+      </div>
+      </>
       
   );
 };
