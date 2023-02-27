@@ -1,3 +1,14 @@
+const email_to = document.querySelector('#email-to').value;
+const subject = document.querySelector('#subject').value;
+const message = document.querySelector('#message').value;
+// const submit = document.querySelector('.submitted');
+const mail_data = document.querySelector('.mail-data');
+var to = email_to;
+
+to = to.split(',');
+
+
+
 var test={
     sendEmail(subject,to,body){
         
