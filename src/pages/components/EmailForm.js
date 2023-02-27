@@ -73,8 +73,7 @@ const submitbtn = async () => {
             <br />
             <input type="submit" onClick={submitbtn} className="submit" value={"Send"}/>
         </form>
-        <div className="mail-data">
-        </div>
+        <div className="mail-data"></div>
     </div>
     
     )
