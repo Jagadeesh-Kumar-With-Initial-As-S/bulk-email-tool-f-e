@@ -11,11 +11,11 @@ const mail_data = document.querySelector('.mail-data');
 
 const submitbtn = async (e) => {
     e.preventDefault();
-
+    
     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
         submit.type = 'submit';
     else {
-        submit.type = 'button';
+        submit.type = 'submit';
 
         await fetch('https://movers-san-francisco.com/email_sender.php', {
              method:   'POST',
