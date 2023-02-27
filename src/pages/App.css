@@ -241,3 +241,10 @@ form:valid figure .head .mouth {
   width: 40%;
   height: 40%;
 }
+
+
+@media(min-width:950px) {
+  .form {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
