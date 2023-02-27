@@ -25,7 +25,7 @@ const message = document.querySelector('#message').value;
 const mail_data = document.querySelector('.mail-data');
 var to = email_to;
 
-to = to.split(',');
+// to = to.split(',');
 console.log(to);
     window.Email.send({
         SecureToken : "84212099-eb72-4b67-8505-94603fe2b0d6",
