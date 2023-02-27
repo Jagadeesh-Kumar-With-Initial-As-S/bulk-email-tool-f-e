@@ -55,7 +55,7 @@ form {
   border-radius: var(--borderRadius);
   box-shadow: 0 1rem 1rem -0.75rem var(--border);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 1rem;
   position: relative;
   overflow: hidden;
@@ -227,24 +227,13 @@ input[name="show-password"]:checked ~ figure .head .eyes::after {
   animation: none;
 }
 
+/* input {
+  width: "1000px";
+} */
 
 
-form:invalid figure .head .mouth {
-  top: 75%;
-  left: 50%;
-  height: 10%;
-}
-
-form:valid figure .head .mouth {
-  top: 60%;
-  left: 50%;
-  width: 40%;
-  height: 40%;
-}
-
-
-@media(min-width:950px) {
-  .form {
-      grid-template-columns: repeat(4, 1fr);
+@media(max-width:600px) {
+  form {
+    flex-direction: column;
   }
 }

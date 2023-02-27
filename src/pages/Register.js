@@ -38,21 +38,18 @@ const Register = () => {
           placeholder="Name"
           type="text"
           value={name}
-          style={{width: "1000px"}}
           onChange={(e) => setName(e.target.value)} />
         <br />
         <input
           placeholder="Email"
           type="email"
           value={email}
-          style={{width: "1000px"}}
           onChange={(e) => setEmail(e.target.value)} />
         <br />
         <input
           placeholder="Password"
           type="password"
           value={password}
-          style={{width: "1000px"}}
           onChange={(e) => setPassword(e.target.value)} />
         <br />
         <input type="submit" />
