@@ -31,4 +31,5 @@
     		);
     	}
     }
-    module.exports = Chart;                              
+    module.exports = Chart;    
+	export default Chart;                          
