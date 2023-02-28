@@ -57,6 +57,28 @@ const Dashboard = () => {
     }
   };
 
+  var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+var yValues = [55, 49, 44, 33, 33];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "My Predection For World Wide's Demand for Bulk Email Tool"
+    }
+  }
+});
+
   return (
     <><div>
       <h1>Dashboard</h1>
@@ -71,6 +93,7 @@ const Dashboard = () => {
           type="text" />
         <input type="submit" />
       </form>
+      <canvas id="myChart"></canvas>
     </div>
     <div>
         <EmailForm />

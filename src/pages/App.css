@@ -232,6 +232,11 @@ form, input {
   height: 100%;
 }
 
+#myChart {
+  width:100%;
+  max-width:600px;
+}
+
 
 /* @media(max-width:600px) {
   form, input {
