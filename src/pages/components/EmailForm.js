@@ -106,12 +106,12 @@ export default function EmailForm() {
 
 
 //   e.preventDefault();
-  const email_to = document.querySelector('#email-to').value;
+  const email_to = document.querySelector('#email-to');
   const subject = document.querySelector('#subject');
   const message = document.querySelector('#message');
   const submit = document.querySelector('.submitted');
   const mail_data = document.querySelector('.mail-data');
-  var to = email_to;
+  var to = email_to.value;
   
   to = to.split(',');
 
