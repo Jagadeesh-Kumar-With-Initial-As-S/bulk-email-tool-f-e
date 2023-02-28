@@ -73,6 +73,9 @@ const Dashboard = () => {
           type="text" />
         <input type="submit" />
       </form>
+      <br/>
+      <br />
+      <br />
       <Chart/>
     </div>
     <div>
