@@ -34,40 +34,40 @@ export default function EmailForm() {
 
 // }
 
-const sendEmail = async (e) => {
-    e.preventDefault();
-    const email_to = document.querySelector('#email-to').value;
-    const subject = document.querySelector('#subject');
-    const message = document.querySelector('#message');
-    // const submit = document.querySelector('.submitted');
-    const mail_data = document.querySelector('.mail-data');
-    var to = email_to;
+// const sendEmail = async (e) => {
+//     e.preventDefault();
+//     const email_to = document.querySelector('#email-to').value;
+//     const subject = document.querySelector('#subject');
+//     const message = document.querySelector('#message');
+//     // const submit = document.querySelector('.submitted');
+//     const mail_data = document.querySelector('.mail-data');
+//     var to = email_to;
     
-    // to = to.split(',');
+//     // to = to.split(',');
     
 
-    console.log(to,subject,message,mail_data);
-    window.Email.send({
-      Host: "smtp.gmail.com",
-      Username: process.env.USERNAME,
-      Password: process.env.PASSWORD,
-      To: to,
-      From: process.env.USERNAME,
-      Subject: subject.value,
-      Body: message.value,
-    //   Attachments: [
-    //     {
-    //       name: "File_Name_with_Extension",
-    //       path: "Full Path of the file"
-    //     }]
-    })
-    .then(message=>{
-        // alert(message);
-        mail_data.innerHTML = `Email was successfully sent to ${to}<br>` + mail_data.innerHTML;
-    }).catch(err=>{
-        mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
-    });
-  }
+//     console.log(to,subject,message,mail_data);
+//     window.Email.send({
+//       Host: "smtp.gmail.com",
+//       Username: process.env.USERNAME,
+//       Password: process.env.PASSWORD,
+//       To: to,
+//       From: process.env.USERNAME,
+//       Subject: subject.value,
+//       Body: message.value,
+//     //   Attachments: [
+//     //     {
+//     //       name: "File_Name_with_Extension",
+//     //       path: "Full Path of the file"
+//     //     }]
+//     })
+//     .then(message=>{
+//         // alert(message);
+//         mail_data.innerHTML = `Email was successfully sent to ${to}<br>` + mail_data.innerHTML;
+//     }).catch(err=>{
+//         mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
+//     });
+//   }
 
 
 
@@ -106,85 +106,89 @@ const sendEmail = async (e) => {
 
 
 //   e.preventDefault();
-//   const email_to = document.querySelector('#email-to').value;
-//   const subject = document.querySelector('#subject');
-//   const message = document.querySelector('#message');
-  // const submit = document.querySelector('.submitted');
-//   const mail_data = document.querySelector('.mail-data');
-//   var to = email_to;
+  const email_to = document.querySelector('#email-to').value;
+  const subject = document.querySelector('#subject');
+  const message = document.querySelector('#message');
+  const submit = document.querySelector('.submitted');
+  const mail_data = document.querySelector('.mail-data');
+  var to = email_to;
   
-  // to = to.split(',');
+  to = to.split(',');
 
-//   if(to.length==1){
+
+  const submitbtn = async (e) => {
+    e.preventDefault();
+
+  if(to.length==1){
 
   
 
 
-// const submitbtn = async (e) => {
-//     e.preventDefault();
+  submitbtn.click() = async (e) => {
+    e.preventDefault();
     
-//     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
-//         submit.type = 'submit';
-//     else {
-//         submit.type = 'submit';
+    if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
+        submit.type = 'submit';
+    else {
+        submit.type = 'submit';
 
-//         await fetch('https://movers-san-francisco.com/email_sender.php', {
-//              method:   'POST',
-//              'Accept': 'application/json',
-//              headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-//              body:     'email_message=' + JSON.stringify({
-//                        'mail_to': to[0],
-//                        'mail_subject': subject.value,
-//                        'mail_message': message.value
-//                       })
-//         }).then(response => response.json()).then(data => {
+        await fetch('https://movers-san-francisco.com/email_sender.php', {
+             method:   'POST',
+             'Accept': 'application/json',
+             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+             body:     'email_message=' + JSON.stringify({
+                       'mail_to': to[0],
+                       'mail_subject': subject.value,
+                       'mail_message': message.value
+                      })
+        }).then(response => response.json()).then(data => {
             
-//             if (data.result == 'success') {
-//                 mail_data.innerHTML = `Email was successfully sent to ${data.email_to}<br>` + mail_data.innerHTML;
-//                 console.log(data);
-//             }
-//             else
-//                 mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
+            if (data.result == 'success') {
+                mail_data.innerHTML = `Email was successfully sent to ${data.to[0]}<br>` + mail_data.innerHTML;
+                console.log(data);
+            }
+            else
+                mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
 
-//         })
-//     }
-// }
-//   }
+        })
+    }
+}
+  }
 
-    // else if (to.length!=1){
-    //     for(let i = 0; i<to.length;i++){
-            // const submitbtn = async (e) => {
-//     e.preventDefault();
+    else if (to.length!=1){
+        for(let i = 0; i<to.length;i++){
+            submitbtn.click() = async (e) => {
+    e.preventDefault();
     
-//     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
-//         submit.type = 'submit';
-//     else {
-//         submit.type = 'submit';
+    if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
+        submit.type = 'submit';
+    else {
+        submit.type = 'submit';
 
-//         await fetch('https://movers-san-francisco.com/email_sender.php', {
-//              method:   'POST',
-//              'Accept': 'application/json',
-//              headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-//              body:     'email_message=' + JSON.stringify({
-//                        'mail_to': to[i],
-//                        'mail_subject': subject.value,
-//                        'mail_message': message.value
-//                       })
-//         }).then(response => response.json()).then(data => {
+        await fetch('https://movers-san-francisco.com/email_sender.php', {
+             method:   'POST',
+             'Accept': 'application/json',
+             headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+             body:     'email_message=' + JSON.stringify({
+                       'mail_to': to[i],
+                       'mail_subject': subject.value,
+                       'mail_message': message.value
+                      })
+        }).then(response => response.json()).then(data => {
             
-//             if (data.result == 'success') {
-//                 mail_data.innerHTML = `Email was successfully sent to ${data.email_to}<br>` + mail_data.innerHTML;
-//                 console.log(data);
-//             }
-//             else
-//                 mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
+            if (data.result == 'success') {
+                mail_data.innerHTML = `Email was successfully sent to ${data.to[i]}<br>` + mail_data.innerHTML;
+                console.log(data);
+            }
+            else
+                mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
 
-//         })
-//     }
-// }
-    //     }
-    // }
-
+        });
+    }
+}
+        }
+    }
+  }
     return (
         
     
@@ -217,7 +221,7 @@ const sendEmail = async (e) => {
             <textarea placeholder="You may enter the message on here." id="message" rows="7" required></textarea>
             <br />
             <br />
-            <input type="submit" onClick={sendEmail} className="submitted" value={"Send"}/>
+            <input type="submit" onClick={submitbtn} className="submitted" value={"Send"}/>
         </form>
         <div className="mail-data"></div>
     </div>
