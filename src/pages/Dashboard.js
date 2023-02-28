@@ -79,6 +79,8 @@ new Chart("myChart", {
   }
 });
 
+document.querySelector('#myChart').innerHTML= Chart;
+
   return (
     <><div>
       <h1>Dashboard</h1>
