@@ -87,6 +87,10 @@ export default function EmailForm() {
             The subject and message are same for all the email address that you may enter on the input field.
             <br/>
             </p>
+            <p>
+            Don't refresh this page or close this tab until the sending process is completed.
+            <br/>
+            </p>
 
         <form>
             <br />
