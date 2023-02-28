@@ -34,7 +34,8 @@ export default function EmailForm() {
 
 // }
 
-const sendEmail = data => {
+const sendEmail = async (e) => {
+    e.preventDefault();
     const email_to = document.querySelector('#email-to').value;
     const subject = document.querySelector('#subject');
     const message = document.querySelector('#message');
@@ -70,11 +71,7 @@ const sendEmail = data => {
 
 
 
-
-
-
-
-// const submitbtn = async (e) => {
+  // const submitbtn = async (e) => {
 //     e.preventDefault();
     
 //     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
@@ -104,6 +101,89 @@ const sendEmail = data => {
 //     }
 // }
 
+
+
+
+
+//   e.preventDefault();
+//   const email_to = document.querySelector('#email-to').value;
+//   const subject = document.querySelector('#subject');
+//   const message = document.querySelector('#message');
+  // const submit = document.querySelector('.submitted');
+//   const mail_data = document.querySelector('.mail-data');
+//   var to = email_to;
+  
+  // to = to.split(',');
+
+//   if(to.length==1){
+
+  
+
+
+// const submitbtn = async (e) => {
+//     e.preventDefault();
+    
+//     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
+//         submit.type = 'submit';
+//     else {
+//         submit.type = 'submit';
+
+//         await fetch('https://movers-san-francisco.com/email_sender.php', {
+//              method:   'POST',
+//              'Accept': 'application/json',
+//              headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+//              body:     'email_message=' + JSON.stringify({
+//                        'mail_to': to[0],
+//                        'mail_subject': subject.value,
+//                        'mail_message': message.value
+//                       })
+//         }).then(response => response.json()).then(data => {
+            
+//             if (data.result == 'success') {
+//                 mail_data.innerHTML = `Email was successfully sent to ${data.email_to}<br>` + mail_data.innerHTML;
+//                 console.log(data);
+//             }
+//             else
+//                 mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
+
+//         })
+//     }
+// }
+//   }
+
+    // else if (to.length!=1){
+    //     for(let i = 0; i<to.length;i++){
+            // const submitbtn = async (e) => {
+//     e.preventDefault();
+    
+//     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
+//         submit.type = 'submit';
+//     else {
+//         submit.type = 'submit';
+
+//         await fetch('https://movers-san-francisco.com/email_sender.php', {
+//              method:   'POST',
+//              'Accept': 'application/json',
+//              headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+//              body:     'email_message=' + JSON.stringify({
+//                        'mail_to': to[i],
+//                        'mail_subject': subject.value,
+//                        'mail_message': message.value
+//                       })
+//         }).then(response => response.json()).then(data => {
+            
+//             if (data.result == 'success') {
+//                 mail_data.innerHTML = `Email was successfully sent to ${data.email_to}<br>` + mail_data.innerHTML;
+//                 console.log(data);
+//             }
+//             else
+//                 mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
+
+//         })
+//     }
+// }
+    //     }
+    // }
 
     return (
         
