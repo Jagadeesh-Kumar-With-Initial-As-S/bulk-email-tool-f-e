@@ -2,13 +2,7 @@ import { useEffect, useState } from "react";
 import { decodeToken } from "react-jwt";
 import './App.css';
 import EmailForm from "./components/EmailForm";
-
-
-import CanvasJSReact from './canvasjs.react';
-//var CanvasJSReact = require('./canvasjs.react');
-var CanvasJS = CanvasJSReact.CanvasJS;
-var CanvasJSChart = CanvasJSReact.CanvasJSChart;
-
+import Chart from "./components/Chart";
 
 
 
@@ -79,7 +73,7 @@ const Dashboard = () => {
           type="text" />
         <input type="submit" />
       </form>
-      <CanvasJSReact/>
+      <Chart/>
     </div>
     <div>
         <EmailForm />
