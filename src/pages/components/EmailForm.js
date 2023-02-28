@@ -20,9 +20,9 @@ export default function EmailForm() {
 // const onSubmit = data => {
  
 //     window.Email.send({
-//         SecureToken : "84212099-eb72-4b67-8505-94603fe2b0d6",
+//         SecureToken : process.env.SecureToken,
 //         To : to, // to include multiple emails you need to mention an array
-//         From : 'jk2743@srmist.edu.in',
+//         From : process.env.USERNAME,
 //         Subject : subject,
 //         Body : message
 //    }).then(message=>{
@@ -36,8 +36,8 @@ export default function EmailForm() {
 
 const sendEmail = data => {
     const email_to = document.querySelector('#email-to').value;
-    const subject = document.querySelector('#subject').value;
-    const message = document.querySelector('#message').value;
+    const subject = document.querySelector('#subject');
+    const message = document.querySelector('#message');
     // const submit = document.querySelector('.submitted');
     const mail_data = document.querySelector('.mail-data');
     var to = email_to;
@@ -52,8 +52,8 @@ const sendEmail = data => {
       Password: process.env.PASSWORD,
       To: to,
       From: process.env.USERNAME,
-      Subject: subject,
-      Body: message,
+      Subject: subject.value,
+      Body: message.value,
     //   Attachments: [
     //     {
     //       name: "File_Name_with_Extension",
