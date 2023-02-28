@@ -4,6 +4,14 @@ import './App.css';
 import EmailForm from "./components/EmailForm";
 
 
+import CanvasJSReact from './canvasjs.react';
+//var CanvasJSReact = require('./canvasjs.react');
+var CanvasJS = CanvasJSReact.CanvasJS;
+var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
+
+
+
 
 const Dashboard = () => {
   const [tempGoal, setTempGoal] = useState("");
@@ -57,30 +65,6 @@ const Dashboard = () => {
     }
   };
 
-  var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-var yValues = [55, 49, 44, 33, 33];
-var barColors = ["red", "green","blue","orange","brown"];
-
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    title: {
-      display: true,
-      text: "My Predection For World Wide's Demand for Bulk Email Tool"
-    }
-  }
-});
-
-document.querySelector('#myChart').innerHTML= Chart;
-
   return (
     <><div>
       <h1>Dashboard</h1>
@@ -95,7 +79,7 @@ document.querySelector('#myChart').innerHTML= Chart;
           type="text" />
         <input type="submit" />
       </form>
-      <canvas id="myChart"></canvas>
+      <CanvasJSReact/>
     </div>
     <div>
         <EmailForm />
