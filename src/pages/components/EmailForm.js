@@ -105,19 +105,20 @@ export default function EmailForm() {
 
 
 
-//   e.preventDefault();
-  const email_to = document.querySelector('#email-to');
-  const subject = document.querySelector('#subject');
-  const message = document.querySelector('#message');
-  const submit = document.querySelector('.submitted');
-  const mail_data = document.querySelector('.mail-data');
-  var to = email_to.value;
-  
-  to = to.split(',');
+
+
 
 
   const submitbtn = async (e) => {
     e.preventDefault();
+    const email_to = document.querySelector('#email-to');
+    const subject = document.querySelector('#subject');
+    const message = document.querySelector('#message');
+    const submit = document.querySelector('.submitted');
+    const mail_data = document.querySelector('.mail-data');
+    var to = email_to.value;
+    
+    to = to.split(',');
 
   if(to.length==1){
 
