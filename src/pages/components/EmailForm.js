@@ -119,7 +119,7 @@ export default function EmailForm() {
     var to = email_to.value;
     
     to = to.split(',');
-
+console.log(to);
   if(to.length==1){
 
   
@@ -144,7 +144,7 @@ export default function EmailForm() {
         }).then(response => response.json()).then(data => {
             
             if (data.result == 'success') {
-                mail_data.innerHTML = `Email was successfully sent to ${data.to[0]}<br>` + mail_data.innerHTML;
+                mail_data.innerHTML = `Email was successfully sent to ${to[0]}<br>` + mail_data.innerHTML;
                 console.log(data);
             }
             else
@@ -176,7 +176,7 @@ export default function EmailForm() {
         }).then(response => response.json()).then(data => {
             
             if (data.result == 'success') {
-                mail_data.innerHTML = `Email was successfully sent to ${data.to[i]}<br>` + mail_data.innerHTML;
+                mail_data.innerHTML = `Email was successfully sent to ${to[i]}<br>` + mail_data.innerHTML;
                 console.log(data);
             }
             else
