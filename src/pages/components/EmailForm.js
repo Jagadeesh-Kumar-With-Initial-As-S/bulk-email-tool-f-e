@@ -88,7 +88,7 @@ export default function EmailForm() {
             <br/>
             </p>
             <p>
-            Don't refresh this page or close this tab until the sending process is completed.
+            You may not refresh this page or close this tab until the sending process is completed because the process may become incomplete.
             <br/>
             </p>
 
