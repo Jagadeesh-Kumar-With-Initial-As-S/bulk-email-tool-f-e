@@ -5,7 +5,7 @@
     	render() {
     		const options = {
     			title: {
-    				text: "My Predection For World Wide's Demand for Bulk Email Tool In 2023"
+    				text: "Mr. Jagadeesh Kumar . S's Chart Regarding World Wide's Demand for Bulk Email Tool In 2023"
     			},
     			data: [
     			{
