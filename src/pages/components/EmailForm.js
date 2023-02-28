@@ -124,8 +124,7 @@ export default function EmailForm() {
   
 
 
-  submitbtn.click() = async (e) => {
-    e.preventDefault();
+
     
     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
         submit.type = 'submit';
@@ -152,13 +151,12 @@ export default function EmailForm() {
 
         })
     }
-}
+
   }
 
     else if (to.length!=1){
         for(let i = 0; i<to.length;i++){
-            submitbtn.click() = async (e) => {
-    e.preventDefault();
+       
     
     if (email_to.value.length == 0 || subject.value.length == 0 || message.value.length == 0)
         submit.type = 'submit';
@@ -185,7 +183,7 @@ export default function EmailForm() {
 
         });
     }
-}
+
         }
     }
   }
