@@ -92,7 +92,7 @@ export default function EmailForm() {
             <br/>
             </p>
             <p>
-            You are required to enter email-to, subject and message since sending messagges on bulk email tool requires the filing of required fields.
+            You are required to enter email-to, subject and message since sending messagges on bulk email tool requires the fillings of required fields.
             <br/>
             </p>
 
