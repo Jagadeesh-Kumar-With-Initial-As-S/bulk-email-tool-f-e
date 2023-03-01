@@ -5,7 +5,10 @@ import "./NavBar.css";
 function NavBar() {
   const [click, setClick] = useState(false);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = async (e) => {
+    e.preventDefault();
+    setClick(!click);
+    }
   return (
     <>
       <nav className="navbar">
