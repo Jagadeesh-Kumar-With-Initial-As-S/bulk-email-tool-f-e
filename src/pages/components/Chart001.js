@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CanvasJSReact from '../../assets/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 console.clear();
-var updateInterval = 5000;
+var updateInterval = 10000;
 class Chart001 extends Component {
 	
 	constructor() {
