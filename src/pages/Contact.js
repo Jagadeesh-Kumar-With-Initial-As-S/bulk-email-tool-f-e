@@ -1,5 +1,5 @@
 import React from "react";
-
+console.clear();
 export const Contact = () => {
   return (
     <div>
