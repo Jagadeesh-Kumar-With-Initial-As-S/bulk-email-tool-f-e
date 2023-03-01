@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { decodeToken } from "react-jwt";
 import './App.css';
+import Chart003 from "./components/Chart003";
 import EmailForm from "./components/EmailForm";
 
 
@@ -75,6 +76,7 @@ const Dashboard = () => {
       <br/>
       <br />
       <br />
+      <Chart003 />
     </div>
     <div>
         <EmailForm />
