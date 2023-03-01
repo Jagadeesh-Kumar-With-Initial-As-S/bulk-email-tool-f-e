@@ -13,6 +13,7 @@ function App() {
       <Router>
       <Advertisement/>
       <NavBar />
+      <br/>
       <div className="pages">
         <Routes>
           <Route element={<Register />} path="/" />

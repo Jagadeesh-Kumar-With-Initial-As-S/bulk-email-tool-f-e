@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CanvasJSReact from '../../assets/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 var $ = require('jquery');
- 
+console.clear(); 
 var totalVisitors = 829500;
  
 var visitorsDrilldownedChartOptions = {

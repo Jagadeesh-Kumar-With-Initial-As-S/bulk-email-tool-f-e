@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CanvasJSReact from '../../assets/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
+console.clear();
 class Chart003 extends Component {
 	render() {
 		const options = {
