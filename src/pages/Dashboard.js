@@ -75,7 +75,6 @@ const Dashboard = () => {
       <br/>
       <br />
       <br />
-      <Chart001/>
     </div>
     <div>
         <EmailForm />
