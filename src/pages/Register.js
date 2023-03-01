@@ -34,7 +34,6 @@ const Register = () => {
     <>
       <div>
       <h1>Register</h1>
-      <br/>
       <p>Welcome to the registration page of Bulk Email Tool.</p>
       <form onSubmit={handleRegister}>
         <input
@@ -59,7 +58,6 @@ const Register = () => {
       </form>
     </div>
     <div>
-      <br/>
         <p>If you have  already registered then <a href="https://bulk-email-tool-f-e.vercel.app/login">click here</a>.
           or copy and paste the following on browser to navigate to login. </p>
           <p>https://bulk-email-tool-f-e.vercel.app/login</p>
