@@ -69,8 +69,8 @@ class Chart002 extends Component {
 				startAngle: 90,
 				type: "doughnut",
 				dataPoints: [
-					{ y: 522460, name: "New Visitors", color: "#E7823A" },
-					{ y: 307040, name: "Returning Visitors", color: "#546BC1" }
+					{ y: 522460, name: "Expected New Visitors In 2023", color: "#E7823A" },
+					{ y: 307040, name: "Expected Returning Visitors In 2023", color: "#546BC1" }
 				]
 			}],
 			"Expected New Visitors In 2023": [{
