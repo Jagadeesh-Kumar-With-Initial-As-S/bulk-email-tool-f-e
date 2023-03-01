@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Chart003 from "./components/Chart003";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -61,7 +62,14 @@ const Register = () => {
         <p>If you have  already registered then <a href="https://bulk-email-tool-f-e.vercel.app/login">click here</a>.
           or copy and paste the following on browser to navigate to login. </p>
           <p>https://bulk-email-tool-f-e.vercel.app/login</p>
-    </div></>
+    </div>
+    <div>
+    <br/>
+      <br />
+      <br />
+      <Chart003/>
+      </div>
+      </>
   );
 };
 

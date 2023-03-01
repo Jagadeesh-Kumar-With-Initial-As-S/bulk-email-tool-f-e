@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Chart002 from "./components/Chart002";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -50,6 +51,10 @@ const Login = () => {
         <br />
         <input type="submit" />
       </form>
+      <br/>
+      <br />
+      <br />
+      <Chart002/>
     </div>
   );
 };
