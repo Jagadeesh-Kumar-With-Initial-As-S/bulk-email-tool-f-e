@@ -27,15 +27,15 @@ class Chart001 extends Component {
 	}
 	render() {
 		const options = {
-			theme: "dark2",
+			theme: "light2",
 			title: {
-				text: "CPU Usage"
+				text: "Expected CPU Usage"
 			},
 			subtitles: [{
-				text: "Intel Core i7 980X @ 3.33GHz"
+				text: "Expected Intel Core i7 980X @ 3.33GHz"
 			}],
 			axisY: {
-				title: "CPU Usage (%)",
+				title: "Expected CPU Usage (%)",
 				includeZero: true,
 				suffix: "%",
 			maximum: 100

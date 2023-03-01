@@ -6,7 +6,7 @@ class Chart003 extends Component {
 		const options = {
 			animationEnabled: true,
 			title: {
-				text: "Customer Satisfaction"
+				text: "Expected Customer Satisfaction"
 			},
 			subtitles: [{
 				text: "71% Positive",
