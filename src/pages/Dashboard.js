@@ -11,6 +11,7 @@ import EmailForm from "./components/EmailForm";
 const Dashboard = () => {
   const [tempGoal, setTempGoal] = useState("");
   const [goal, setGoal] = useState("");
+  const navigate = useNavigate();
 
   const populateDashboard = async () => {
     const token = localStorage.getItem("token");
