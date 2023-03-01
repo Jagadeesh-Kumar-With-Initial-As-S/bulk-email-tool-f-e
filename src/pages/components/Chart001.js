@@ -28,6 +28,7 @@ class Chart001 extends Component {
 		chart.options.data[0].dataPoints = dps;
 		chart.options.title.text = "Expected CPU Usage " + Math.round(dpsTotal / 6) + "%";
 		chart.render();
+		console.clear();
 	}
 	render() {
 		const options = {
