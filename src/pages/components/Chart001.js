@@ -22,7 +22,7 @@ class Chart001 extends Component {
 			dpsTotal += yVal;
 		}
 		chart.options.data[0].dataPoints = dps;
-		chart.options.title.text = "CPU Usage " + Math.round(dpsTotal / 6) + "%";
+		chart.options.title.text = "Expected CPU Usage " + Math.round(dpsTotal / 6) + "%";
 		chart.render();
 	}
 	render() {
