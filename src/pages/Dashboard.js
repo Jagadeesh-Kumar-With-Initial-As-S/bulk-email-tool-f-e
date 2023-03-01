@@ -34,6 +34,7 @@ const Dashboard = () => {
       populateDashboard();
     } else {
       alert("Invalid Token");
+      navigate("/");
     }
   });
 
