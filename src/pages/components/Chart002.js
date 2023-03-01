@@ -20,7 +20,7 @@ var newVSReturningVisitorsOptions = {
 	animationEnabled: true,
 	theme: "light2",
 	title: {
-		text: "New vs Returning Visitors"
+		text: "Expected New vs Expected Returning Visitors In 2023"
 	},
 	subtitles: [{
 		text: "Click on Any Segment to Drilldown",
@@ -57,7 +57,7 @@ class Chart002 extends Component {
 	
 	render() {	
 		this.options = {
-			"New vs Returning Visitors": [{
+			"Expected New vs Expected Returning Visitors In 2023": [{
 				click: this.visitorsChartDrilldownHandler,
 				cursor: "pointer",
 				explodeOnClick: false,
@@ -73,7 +73,7 @@ class Chart002 extends Component {
 					{ y: 307040, name: "Returning Visitors", color: "#546BC1" }
 				]
 			}],
-			"New Visitors": [{
+			"Expected New Visitors In 2023": [{
 				color: "#E7823A",
 				name: "Expected New Visitors In 2023",
 				type: "column",
@@ -92,7 +92,7 @@ class Chart002 extends Component {
 					{ x: new Date("1 Dec 2017"), y: 58400 }
 				]
 			}],
-			"Returning Visitors": [{
+			"Expected Returning Visitors In 2023": [{
 				color: "#546BC1",
 				name: "Expected Returning Visitors In 2023",
 				type: "column",
@@ -139,13 +139,13 @@ class Chart002 extends Component {
 		var chart = this.chart;
 		var options = this.options
 			chart.options = newVSReturningVisitorsOptions;
-			chart.options.data = options["New vs Returning Visitors"];
+			chart.options.data = options["Expected New vs Expected Returning Visitors In 2023"];
 			chart.render();
 		
 		$("#backButton").click(function() { 
 			$(this).toggleClass("invisible");
 			chart.options = newVSReturningVisitorsOptions;
-			chart.options.data = options["New vs Returning Visitors"];
+			chart.options.data = options["Expected New vs Expected Returning Visitors In 2023"];
 			chart.render();
 		});
 	}
