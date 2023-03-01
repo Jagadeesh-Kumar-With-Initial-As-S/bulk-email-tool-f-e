@@ -4,9 +4,12 @@ var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 console.clear();
 var updateInterval = 500;
 class Chart001 extends Component {
+	
 	constructor() {
 		super();
+		console.clear();
 		this.updateChart = this.updateChart.bind(this);
+		console.clear();
 	}
 	componentDidMount(){
 		setInterval(this.updateChart, updateInterval);
