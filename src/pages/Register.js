@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Chart003 from "./components/Chart003";
+import Chart001 from "./components/Chart001";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -65,7 +65,7 @@ const Register = () => {
     </div>
     <div>
     <br/>
-    <Chart003/>
+    <Chart001/>
     </div>
     </>
   );

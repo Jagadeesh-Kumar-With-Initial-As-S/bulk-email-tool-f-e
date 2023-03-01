@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { decodeToken } from "react-jwt";
 import './App.css';
 import EmailForm from "./components/EmailForm";
-import Chart001 from "./components/Chart001";
 
 
 

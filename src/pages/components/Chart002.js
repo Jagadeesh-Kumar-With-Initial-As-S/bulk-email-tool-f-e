@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CanvasJSReact from '../../assets/canvasjs.react';
 var CanvasJSChart = CanvasJSReact.CanvasJSChart;
 var $ = require('jquery');
-console.clear(); 
+ 
 var totalVisitors = 829500;
  
 var visitorsDrilldownedChartOptions = {
@@ -38,7 +38,7 @@ var newVSReturningVisitorsOptions = {
 	},
 	data: []
 };
-console.clear();
+
 class Chart002 extends Component {
 	constructor() {
 		super();
@@ -124,7 +124,7 @@ class Chart002 extends Component {
 			cursor: 'pointer'
 		}
 
-		console.clear();
+		
 		return (
 		<div>
 			<CanvasJSChart options = {this.options} 
