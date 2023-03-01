@@ -1,6 +1,6 @@
 import React from "react";
 
-
+console.clear();
 export default function EmailForm() {
   const submitbtn = async (e) => {
     e.preventDefault();
@@ -71,6 +71,7 @@ export default function EmailForm() {
         }
     }
   }
+  
     return (
         
     

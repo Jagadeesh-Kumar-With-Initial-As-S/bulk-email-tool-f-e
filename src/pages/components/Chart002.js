@@ -38,7 +38,7 @@ var newVSReturningVisitorsOptions = {
 	},
 	data: []
 };
- 
+console.clear();
 class Chart002 extends Component {
 	constructor() {
 		super();
@@ -54,7 +54,7 @@ class Chart002 extends Component {
 		chart.render();
 		$("#backButton").toggleClass("invisible");
 	}
-	
+	console.clear();
 	render() {	
 		this.options = {
 			"Expected New vs Expected Returning Visitors In 2023": [{

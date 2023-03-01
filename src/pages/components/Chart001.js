@@ -55,6 +55,7 @@ class Chart001 extends Component {
 				]
 			}]
 		}
+		console.clear();
 		return (
 			<div>
 				<CanvasJSChart options = {options}
