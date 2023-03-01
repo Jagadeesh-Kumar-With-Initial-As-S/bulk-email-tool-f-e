@@ -54,7 +54,6 @@ class Chart002 extends Component {
 		chart.render();
 		$("#backButton").toggleClass("invisible");
 	}
-	console.clear();
 	render() {	
 		this.options = {
 			"Expected New vs Expected Returning Visitors In 2023": [{
@@ -124,6 +123,8 @@ class Chart002 extends Component {
 			right: '10px',
 			cursor: 'pointer'
 		}
+
+		console.clear();
 		return (
 		<div>
 			<CanvasJSChart options = {this.options} 
