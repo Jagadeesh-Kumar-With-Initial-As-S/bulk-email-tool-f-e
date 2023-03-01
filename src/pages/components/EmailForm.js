@@ -34,7 +34,7 @@ export default function EmailForm() {
                 console.log(data);
             }
             else
-                mail_data.innerHTML = 'Error sending an email!<br>' + mail_data.innerHTML;
+                mail_data.innerHTML = `Error sending an email to ${to[0]}!<br>` + mail_data.innerHTML;
 
         })
         }       
@@ -78,7 +78,7 @@ export default function EmailForm() {
         <br />
         <br />
         <br />
-
+            <h1>Instructions:</h1>
             <p>
             If there were more than one email address then  you may enter the email addresses with ',' inbetween the email addresses.
             <br/>
@@ -89,6 +89,10 @@ export default function EmailForm() {
             </p>
             <p>
             You may not refresh this page or close this tab until the sending process is completed because the process may become incomplete.
+            <br/>
+            </p>
+            <p>
+            You are required to enter email-to, subject and message since sending messagges on bulk email tool requires the filing of required fields.
             <br/>
             </p>
 
