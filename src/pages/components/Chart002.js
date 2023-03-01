@@ -57,7 +57,7 @@ class Chart002 extends Component {
 	
 	render() {	
 		this.options = {
-			"New vs Returning Visitors": [{
+			"Expected New vs Expected Returning Visitors In 2023": [{
 				click: this.visitorsChartDrilldownHandler,
 				cursor: "pointer",
 				explodeOnClick: false,
@@ -73,7 +73,7 @@ class Chart002 extends Component {
 					{ y: 307040, name: "Returning Visitors", color: "#546BC1" }
 				]
 			}],
-			"New Visitors": [{
+			"Expected New Visitors In 2023": [{
 				color: "#E7823A",
 				name: "New Visitors",
 				type: "column",
@@ -92,7 +92,7 @@ class Chart002 extends Component {
 					{ x: new Date("1 Dec 2017"), y: 58400 }
 				]
 			}],
-			"Returning Visitors": [{
+			"Expected Returning Visitors In 2023": [{
 				color: "#546BC1",
 				name: "Returning Visitors",
 				type: "column",

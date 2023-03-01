@@ -65,11 +65,9 @@ const Register = () => {
     </div>
     <div>
     <br/>
-      <br />
-      <br />
-      <Chart003/>
-      </div>
-      </>
+    <Chart003/>
+    </div>
+    </>
   );
 };
 
