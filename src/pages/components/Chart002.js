@@ -20,7 +20,7 @@ var newVSReturningVisitorsOptions = {
 	animationEnabled: true,
 	theme: "light2",
 	title: {
-		text: "Expected New vs Expected Returning Visitors In 2023"
+		text: "New vs Returning Visitors"
 	},
 	subtitles: [{
 		text: "Click on Any Segment to Drilldown",
@@ -57,13 +57,13 @@ class Chart002 extends Component {
 	
 	render() {	
 		this.options = {
-			"Expected New vs Expected Returning Visitors In 2023": [{
+			"New vs Returning Visitors": [{
 				click: this.visitorsChartDrilldownHandler,
 				cursor: "pointer",
 				explodeOnClick: false,
 				innerRadius: "75%",
 				legendMarkerType: "square",
-				name: "New vs Returning Visitors",
+				name: "Expected New vs Expected Returning Visitors In 2023",
 				radius: "100%",
 				showInLegend: true,
 				startAngle: 90,
@@ -73,9 +73,9 @@ class Chart002 extends Component {
 					{ y: 307040, name: "Returning Visitors", color: "#546BC1" }
 				]
 			}],
-			"Expected New Visitors In 2023": [{
+			"New Visitors": [{
 				color: "#E7823A",
-				name: "New Visitors",
+				name: "Expected New Visitors In 2023",
 				type: "column",
 				dataPoints: [
 					{ x: new Date("1 Jan 2017"), y: 37000 },
@@ -92,9 +92,9 @@ class Chart002 extends Component {
 					{ x: new Date("1 Dec 2017"), y: 58400 }
 				]
 			}],
-			"Expected Returning Visitors In 2023": [{
+			"Returning Visitors": [{
 				color: "#546BC1",
-				name: "Returning Visitors",
+				name: "Expected Returning Visitors In 2023",
 				type: "column",
 				dataPoints: [
 					{ x: new Date("1 Jan 2017"), y: 19000 },

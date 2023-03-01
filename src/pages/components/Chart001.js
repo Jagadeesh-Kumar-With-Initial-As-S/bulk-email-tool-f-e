@@ -64,4 +64,4 @@ class Chart001 extends Component {
 		);
 	}
 }
-	export default Chart001;                          
+export default Chart001;                          
