@@ -5,9 +5,8 @@ import "./NavBar.css";
 function NavBar() {
   const [click, setClick] = useState(false);
 
-  const handleClick = async (e) => {
+  const handleClick = async () => {
     setClick(!click);
-    e.preventDefault();
     }
   return (
     <>
