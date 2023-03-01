@@ -6,8 +6,8 @@ function NavBar() {
   const [click, setClick] = useState(false);
 
   const handleClick = async (e) => {
-    e.preventDefault();
     setClick(!click);
+    e.preventDefault();
     }
   return (
     <>
