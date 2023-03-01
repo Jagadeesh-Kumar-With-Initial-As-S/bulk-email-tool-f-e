@@ -23,6 +23,7 @@ const Dashboard = () => {
       setGoal(data.goal);
     } else {
       alert("Invalid Token");
+      navigate("/");
     }
   };
 
