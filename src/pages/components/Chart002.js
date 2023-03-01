@@ -20,7 +20,7 @@ var newVSReturningVisitorsOptions = {
 	animationEnabled: true,
 	theme: "light2",
 	title: {
-		text: "New vs Returning Visitors"
+		text: "Expected New vs Expected Returning Visitors In 2023"
 	},
 	subtitles: [{
 		text: "Click on Any Segment to Drilldown",
