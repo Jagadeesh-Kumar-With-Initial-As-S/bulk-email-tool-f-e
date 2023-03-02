@@ -23,7 +23,7 @@ const Login = () => {
 
     if (data.status == "ok") {
       localStorage.setItem("token", data.token);
-
+      alert("Logged in successfully")
       navigate("/dashboard");
     } else {
       alert("Wrong Email or Password");
