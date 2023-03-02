@@ -22,7 +22,7 @@ p {
 
 
 html, body {
-  align-items: center;
+  /* align-items: center; */
   background: #f2f4f8;
   border: 0;
   display: flex;
