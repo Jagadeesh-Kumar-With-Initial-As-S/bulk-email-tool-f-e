@@ -67,7 +67,7 @@ const Dashboard = () => {
     <><div>
       <h1>Dashboard</h1>
       <br/>
-      <p>Welcome to the dashboard of Bulk Email Tool.</p>
+      <p>Welcome to the dashboard page of Bulk Email Tool.</p>
       <h2>{goal || "No goal found"}</h2>
       <form onSubmit={addGoal}>
         <input
