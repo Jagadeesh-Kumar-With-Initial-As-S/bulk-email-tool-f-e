@@ -5,6 +5,7 @@ export const Contact = () => {
   return (
     <div>
       <h1>Contact Us</h1>
+      <br/>
       <p>
       Welcome to the contact us page of Bulk Email Tool .
       </p>
