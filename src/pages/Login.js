@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { decodeToken } from "react-jwt";
 import { useNavigate } from "react-router-dom";
 import Chart002 from "./components/Chart002";
 
@@ -28,7 +29,39 @@ const Login = () => {
     } else {
       alert("Wrong Email or Password");
     }
+
+    
+  }
+    const [tempGoal, setTempGoal] = useState("");
+  const [goal, setGoal] = useState("");
+  // const navigate = useNavigate();
+
+  const populateLogin = async () => {
+    const token = localStorage.getItem("token");
+    const req = await fetch("https://bulk-email-tool-b-k.vercel.app/api/dashboard", {
+      headers: { "x-access-token": token },
+    });
+
+    const data = await req.json();
+
+    if (data.status == "ok") {
+      setGoal(data.goal);
+    } else {
+      alert("Invalid Token");
+      navigate("/");
+    }
   };
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    const isTokenValid = decodeToken(token);
+    if (isTokenValid) {
+      populateLogin();
+      alert("Valid Token");
+      navigate("/dashboard");
+    } else {
+    }
+  });
   return (
     <div>
       <h1>Login</h1>
