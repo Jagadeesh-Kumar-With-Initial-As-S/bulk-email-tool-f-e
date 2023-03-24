@@ -10,6 +10,7 @@ export default function EmailForm() {
     const submit = document.querySelector('.submitted');
     const mail_data = document.querySelector('.mail-data');
     var to = email_to.value;
+    to = to.trim();
     to = to.split(',');
     console.log(to);
     if(to.length==1){
